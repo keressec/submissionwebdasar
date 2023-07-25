@@ -1,0 +1,153 @@
+/* Style untuk header */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+header {
+    background-color: #3A98B9;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style untuk main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+
+article {
+    flex-basis: 60%;
+    padding: 20px;
+
+}
+article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+    
+}
+article p {
+    text-align: justify;
+}
+
+
+/* Style untuk aside */
+
+aside {
+    flex-basis: 0%;
+    padding: 20px;
+    position:absolute;
+    top : 20px;
+    left: 70%;
+    
+}
+
+.profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:sticky;
+    top :20px;
+    margin-right: 20px;
+}
+
+.profil img {
+    width: 150px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.profil h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.profil p {
+    margin-top: 10px;
+    text-align: justify;
+}
+footer {
+    background-color: #3A98B9;
+    color : #fff;
+    text-align: center;
+    padding: 10px;
+;}
+
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #3A98B9;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  #back-to-top-btn:hover {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 1000px) {
+    article {
+      width: 100%;
+      padding: 0;
+    }
+    aside {
+        width: 100%;
+        position:relative;
+        padding: 0;
+        top : 0 ;
+        left : 0;
+    }
+    nav {
+        background-color: #3A98B9;
+        padding: 5px;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        
+     }
+     header {
+        display : inline ;
+        width: 100%;
+        
+     }
+     header h1 {
+        padding: 5px;
+        display: inline;
+        height: 100%;
+        font-size: 28px;
+     }
+  }
